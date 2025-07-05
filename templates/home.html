@@ -14,7 +14,7 @@
   <h2>Enter Features for Prediction</h2>
   <form action="{{ url_for('predict')}}" method="post">
     <label>Median Income (MedInc):
-      <input type="number" step="0.001" name="MedInc" required />
+      <input type="number" step="0.0001" name="MedInc" required />
     </label>
 
     <label>House Age (years):
@@ -22,11 +22,11 @@
     </label>
 
     <label>Average Rooms per House (AveRooms):
-      <input type="number" step="0.01" name="AveRooms" required />
+      <input type="number" step="0.000001" name="AveRooms" required />
     </label>
 
     <label>Average Bedrooms per House (AveBedrms):
-      <input type="number" step="0.01" name="AveBedrms" required />
+      <input type="number" step="0.000001" name="AveBedrms" required />
     </label>
 
     <label>Population in Block (Population):
@@ -34,7 +34,7 @@
     </label>
 
     <label>Average Occupants per Room (AveOccup):
-      <input type="number" step="0.01" name="AveOccup" required />
+      <input type="number" step="0.000001" name="AveOccup" required />
     </label>
 
     <label>Latitude:
