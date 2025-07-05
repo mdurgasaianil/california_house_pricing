@@ -5,7 +5,9 @@ import pandas as pd
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+
+app = application
 
 @app.route('/')
 def home():
@@ -57,4 +59,4 @@ def predict():
         return render_template("home.html",prediction_text = "The house price prediction is ${:.2f}k".format(results[0]))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
